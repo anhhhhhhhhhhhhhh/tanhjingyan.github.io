@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Món ăn Việt Nam</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('tanh.jingyan (1).png');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            height: 100vh;
+        }
+        .navbar {
+            background-color: #10895b;
+            padding: 15px;
+            display: flex;
+            align-items: center;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            left: 0;
+        }
+        .navbar img {
+            height: 50px;
+            margin-left: 15px;
+        }
+        .navbar h1 {
+            color: white;
+            margin-left: 15px;
+            font-size: 24px;
+        }
+        .container {
+            padding: 100px 20px;
+            text-align: center;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            max-width: 800px;
+            margin: auto;
+        }
+        .dish {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            transition: transform 0.3s ease-in-out;
+        }
+        .dish:hover {
+            transform: scale(1.1);
+            animation: bounce 0.5s ease infinite alternate;
+        }
+        @keyframes bounce {
+            0% { transform: translateY(0); }
+            100% { transform: translateY(-10px); }
+        }
+        .dish img {
+            width: 100%;
+            border-radius: 10px;
+        }
+        .content {
+            max-width: 800px;
+            margin: 100px auto 20px;
+            padding: 20px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            text-align: left;
+}
+
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <img src="logo.png"  alt="Logo">
+        <a href="index.html"><h1>Trang chủ</h1></a>
+       
+    </div>
+    <div class="container">
+        <h1>Chào mừng đến với ẩm thực Việt Nam</h1>
+        <p>Khám phá những món ăn truyền thống đặc sắc của Việt Nam.</p>
+        <div class="grid">
+            <div class="dish">
+                <img src="https://cdn.buffetposeidon.com/app/media/uploaded-files/200823-cach-lam-pho-ga-buffet-poseidon.jpg" alt="Phở">
+                <a href="pho.html"><h2>Phở</h2></a>
+            </div>
+            <div class="dish">
+                <img src="https://media-cdn-v2.laodong.vn/storage/newsportal/2024/6/7/1350134/Banh-Mi-5.jpg" alt="Bánh Mì">
+            
+                <a href="banhmi.html"><h2>Bánh Mì</h2></a>
+            </div>
+            <div class="dish">
+                <img src="https://cdn.eva.vn/upload/3-2023/images/2023-07-03/3-cach-lam-goi-cuon-ngon-va-bi-quyet-pha-5-loai-tuong-cham-chuan-image11-1660893595-703-width780height488-1688369321-984-width780height488.jpg" alt="Gỏi Cuốn">
+                <a href="goicuon.html">
+                <h2>Gỏi Cuốn</h2>
+            </div>
+            <div class="dish">
+                <img src="https://vcdn1-giadinh.vnecdn.net/2021/01/08/Anh-2-8146-1610099449.jpg?w=460&h=0&q=100&dpr=2&fit=crop&s=sQNPaScgfMKYM7nJJEMJUQ" alt="Bún Chả">
+                <a href="buncha.html">
+                <h2>Bún Chả</h2>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

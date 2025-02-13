@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phở - Món ăn Việt Nam</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('tanh.jingyan (1).png');
+            background-size: cover;
+            background-position: center;
+            
+            height: 100vh;
+            
+        }
+        .navbar {
+            background-color: #10895b;
+            padding: 15px;
+            display: flex;
+            align-items: center;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            left: 0;
+        }
+        .navbar img {
+            height: 50px;
+            margin-left: 15px;
+        }
+        .navbar h1 {
+            color: white;
+            margin-left: 15px;
+            font-size: 24px;
+        }
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+            padding: 100px 20px;
+            max-width: 1000px;
+            margin: auto;
+        }
+        .left {
+            flex: 1;
+            text-align: center;
+        }
+        .left img {
+            width: 100%;
+            max-width: 400px;
+            border-radius: 10px;
+        }
+        .right {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            padding-left: 20px;
+        }
+        .subpage {
+            background: white;
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            transition: transform 0.3s;
+        }
+        .subpage:hover {
+            transform: scale(1.05);
+        }
+        .subpage a {
+            text-decoration: none;
+            color: #14ae09;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <img src="logo.png" alt="Logo">
+        <a href="index.html">Trang chủ</a>
+    </div>
+    <div class="container">
+        <div class="left">
+            <img src="https://noiphodien.com/wp-content/uploads/2024/08/pho-bao-nhieu-calo-an-pho-co-bi-tang-can-khong-1.jpg" alt="Phở">
+        </div>
+        <div class="right">
+            <div class="subpage">
+                <h2><a href="so-luoc-pho.html">Sơ lược về phở</a></h2>
+            </div>
+            <div class="subpage">
+                <h2><a href="huong-dan-lam-pho.html">Hướng dẫn làm</a></h2>
+            </div>
+            <div class="subpage">
+                <h2><a href="quan-an-ngon-pho.html">Quán ăn ngon</a></h2>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
